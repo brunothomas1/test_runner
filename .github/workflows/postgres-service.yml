@@ -1,8 +1,5 @@
 name: Postgres Service Example
 
-env:
-  ACTIONS_RUNNER_HOOK_JOB_COMPLETED: "/opt/runner/prune_volumes.sh"
-
 on:
   push:
     branches:
