@@ -1,3 +1,3 @@
 # Test Runner - Prune Volume
 
-Testing post script
+Testing post script to prune volumes
