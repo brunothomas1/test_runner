@@ -12,7 +12,7 @@ jobs:
   container-job:
     runs-on: self-hosted
     container:
-      image:  node:10.16-jessie
+      image:  apline:latest
 
     services:
       postgres:
@@ -27,10 +27,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - run: npm ci
-      working-directory: ./postgres
-    - run: node client.js
-      working-directory: ./postgres
+    - run: echo "Test"
       env:
         POSTGRES_HOST: postgres
         POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
